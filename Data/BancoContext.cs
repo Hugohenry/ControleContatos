@@ -10,7 +10,7 @@ namespace ControleContatos.Data
 
     public class BancoContext : DbContext
     {
-        public BancoContext(DbContextOptions<BancoContext> options) : base()
+        public BancoContext(DbContextOptions<BancoContext> options) : base(options)
         {
 
         }

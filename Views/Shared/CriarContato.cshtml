@@ -3,30 +3,32 @@
 <head>
 
      <meta charset="utf-8" />
-
-
+     
 </head>
    <body>
+    
 
                    
                    <div class="text-center">
                     <h1 class="Display-4" >Cadastrar Contato</h1>
                    </div>
-                <form>
+
+<form asp-controller="IndexContato" asp-action="CriarContato" method="post">
                     
-                    <div class="form-group">
+                    
+                 <div class="form-group">
                         <label for="exampleInputNome1">Nome</label>
-                        <input type="name" class="form-control" id="exampleInputNome1" aria-describedby="nomeHelp" placeholder="Digite o nome">
+                        <input type="name" asp-for="Nome" class="form-control" id="exampleInputNome1" aria-describedby="nomeHelp" placeholder="Digite o nome">
                         
                     </div>
                     <div class="form-group">
                         <label for="exampleInputEmail1">E-mail</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Digite o e-mail">
+                        <input type="email" asp-for="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Digite o e-mail">
                         
                     </div>
                     <div class="form-group">
                         <label for="exampleInputCelular1" >Telefone</label>
-                        <input type="text" class="form-control" id="exampleTelefone1" placeholder="Digite o telefone">
+                        <input type="text" asp-for="Telefone" class="form-control" id="exampleTelefone1" placeholder="Digite o telefone">
                     </div>
                     
                           
@@ -34,8 +36,7 @@
                         <a class="btn btn-secondary btn-block" asp-controller="Contato" asp-action="IndexContato" role="button">Voltar</a>
                        
                 </form>
-        
-
-
+                
    </body>
 </Html>
+        
